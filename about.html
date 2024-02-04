@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1">
+    <title>News</title>
+    <style>
+        body{
+            background-color: rgb(134, 50, 84);
+            margin:0;
+            padding: 2%;
+
+        }
+        .header{
+           
+            text-align: center;
+            background-color: #2d3d6d;
+            color:azure;
+            
+        }
+        .button{
+            color:blue;
+            background-color: azure;
+        }
+        a,a:link{
+            text-decoration: none;
+        }
+        .menu{
+            margin-top: 0%;
+            background-color: #afce40;
+        }
+        section{
+            padding-left: 2%;
+            
+        }
+        h1{
+            text-shadow:black;
+            text-decoration: solid;
+            text-align: center;
+        }
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Welcome to Ziva Online Social Media</h1>
+    <div class="menu">
+        <center>
+        <table width="100%">
+            <tr><th><a href="home.php">Home</a></th>
+                <th><a href="display.php">All conversation</a></th>
+                <th><a href="about.html">About Us</a></th>
+                <th><a href="contact.html">Contact Us</a></th>
+                <th><a href="se.php">Click here to search</a></th>
+                
+            </tr>
+            </table>
+            </center>
+    </div>
+    </div>
+    <h1>About us</h1>
+    <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
+          <img src="https://res.cloudinary.com/teepublic/image/private/s--TJ03_ia8--/t_Preview/b_rgb:000000,c_lpad,f_jpg,h_630,q_90,w_1200/v1643159885/production/designs/27508621_0.jpg" class="slide" width="500" height="300" />
+          <img src="https://i.pinimg.com/originals/50/00/85/5000850e45603770c529e4eb56770f76.png" class="slide" width="500" height="300" />
+          <img src="https://p1.hiclipart.com/preview/165/78/363/ziva-png-clipart.jpg" class="slide" width="500" height="300" />
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </body>
+  </html>
